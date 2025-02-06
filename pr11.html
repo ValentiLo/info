@@ -8,12 +8,14 @@
         div.f{display: flex;}
         
         html{background: antiquewhite; background-image: url(pupil_auth_big_2.png);}
-        p,h2,table{background: lemonchiffon;padding: 50px; margin: 40px;border: 4px dotted palegreen;border-radius: 25px;}
+        p,h1,h2,h3,h4,table,caption {background: lemonchiffon;padding: 50px; margin: 40px;border: 4px dotted palegreen;border-radius: 25px;}
         li{background: palegreen; padding: 20px;margin: 10px;list-style: none; border: 6px dotted lemonchiffon;border-radius: 20px;}
     h1{margin-left: 150px;color: rgb(6, 147, 6);}
     table,td,th{border: 4px dotted palegreen;}
     table{width: 70%;}
-    td,th{padding: 15px;}
+    td,th{padding: 15px;text-align: center;}
+    span.red{background-color: red;}
+    span.gr{background-color: rgb(125, 196, 19);}
     </style>
 </head>
 <body>
@@ -43,10 +45,10 @@
     
     
     </div>
-    <div> <h1>Позиционные системы счисления</h1>  <p>
-        Алфавит системы счисления  - это список символов этой системы счисления. </p>
+    <div> <h1>Позиционные системы счисления</h1>  
+        <p> Алфавит системы счисления  - это список символов этой системы счисления. </p>
        <p>Количество символов алфавита является основанием системы счисления.</p>
-       <p>Для алфавита в системах счисления, в которых надо больше 10 цифр, используются латинские буквы.
+       <p>Для алфавита в системах счисления, в которых надо больше 10 цифр, используются латинские буквы. </p>
         <h2>Основные системы счисления. </h2>
     
     <table>
@@ -85,9 +87,152 @@
             <td>14</td>
             <td>0123456789ABCD</td>
         </tr>
-    </table></p>
+    </table>
+
               <p>Число можно представить в виде суммы произведений цифр числа на основание системы в степени, указывающей на позицию цифры в записи числа.</p>
               
+<p>Развернутая форма записи числа</p>
+              <h2>Задачи на двоичную систему счисления
+
+                </h2><h3>Пример №1 задания </h3>
+    <h4>Сколько единиц в двоичной записи шестнадцатеричного числа 12F0 <sub>16</sub>?</h4>
+              <p>Поскольку шестнадцатеричная и двоичная системы родственные, одна шестнадцатеричная цифра соответствует ровно четырём двоичным. Воспользуемся таблицей перевода.</p>
+<p><caption>Таблица шестнадцатеричных чисел:</caption></p>
+              <table>
+                  <tr>
+                      <th>x <sub>10</sub></th>
+                      <th>x <sub>16</sub></th>
+                      <th>x <sub>2</sub></th>
+                  </tr>
+                  <tr>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0000</td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>0001</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>0010</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>0011</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>0100</td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>0101</td>
+                  </tr>
+
+                  <tr>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0110</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0111</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>1001</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>1010</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>B</td>
+                    <td>1011</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>C</td>
+                    <td>1100</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>D</td>
+                    <td>1101</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>E</td>
+                    <td>1110</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>F</td>
+                    <td>111</td>
+                </tr>
+                
+              </table>
+          
+          
+            <table>
+                <tr>
+                    <th>1<sub>16</sub></th>
+                    <th>2<sub>16</sub></th>
+                    <th>F<sub>16</sub></th>
+                    <th>O<sub>16</sub></th>
+                </tr>
+                <tr>
+                    <td>0001<sub>2</sub></td>
+                    <td>0010<sub>2</sub></td>
+                    <td>1111<sub>2</sub></td>
+                    <td>0000<sub>2</sub></td>
+                </tr>
+            </table>
+          
+          <p>Таким образом, 12F0 <sub>16</sub> = 0001001011110000 <sub>2</sub>.
+
+            В двоичной записи данного числа шесть единиц</p>
+            <h2>Пример №2 задания</h2>
+                <h3>Сколько значащих нулей в двоичной записи шестнадцатеричного числа 12F0 <sub>16</sub>?</h3>
+                <table>
+                    <tr>
+                        <th>1<sub>16</sub></th>
+                        <th>2<sub>16</sub></th>
+                        <th>F<sub>16</sub></th>
+                        <th>O<sub>16</sub></th>
+                    </tr>
+                    <tr>
+                        <td>0001<sub>2</sub></td>
+                        <td>0010<sub>2</sub></td>
+                        <td>1111<sub>2</sub></td>
+                        <td>0000<sub>2</sub></td>
+                    </tr>
+                </table>
+              
+              <p>Таким образом, 12F0 <sub>16</sub> = 0001001011110000 <sub>2</sub>.
+    
+            </p>
+            <p>
+                Однако, не все нули в этой записи значащие! Незначащие нули находятся слева от старшей значащей цифры. Их можно дописывать и зачёркивать по необходимости. Остальные нули значащие.
+            </p>
+            <p><span class="red">000</span>1<span class="gr">00</span>1<span class="gr">0</span>1111<span class="gr">0000</span></p>
+            <p>Итого, в двоичной записи данного числа семь значащих нулей.</p>
+
         </div>
     </div> 
 </body>
