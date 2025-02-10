@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.f{display: flex;}
+        
+        html{background: antiquewhite; background-image: url(pupil_auth_big_2.png);}
+        p,h2,h3,table{background: lemonchiffon;padding: 50px; margin: 40px;border: 4px dotted palegreen;border-radius: 25px;}
+        li{background: palegreen; padding: 20px;margin: 10px;list-style: none; border: 6px dotted lemonchiffon;border-radius: 20px;}
+    h1{margin-left: 150px;color: rgb(6, 147, 6);}
+    table,td,th{border: 4px dotted palegreen;}
+    table{width: 70%;}
+    td,th{padding: 15px;}
+    </style>
+</head>
+<body>
+    <div class="f"><div>
+        <ul>
+            <li><a href="zvuk1.html">звук</a></li>
+            <li><a href="zvuk2.html">Громкость звука</a></li>
+            <li><a href="zvuk3.html">звукозапись</a></li>
+            <li><a href="zvuk4.html">Оцифровка звука. Временна́я дискретизация
+            </a></li>
+            <li><a href="zvuk5.html">Оцифровка звука. Шаг дискретизации
+            </a></li>
+            <li><a href="zvuk6.html">Параметры оцифровки звука</a></li>            
+            <li><a href="zvuk7.html">Примеры параметров оцифровки звука</a></li>
+            <li><a href="zvuk8.html">Задание 1</a></li>
+            <li><a href="zvuk9.html">Главное (конспект)</a></li>
+            <li><a href="zvuk10.html">Задание 2</a></li>
+            <li><a href="zvuk11.html">Задание 3</a></li>
+            <li><a href="zvuk12.html">Задание 4</a></li>
+            <li><a href="zvuk13.html">Задание 2</a></li>
+            <li><a href="zvuk14.html">Задание 3</a></li>
+            <li><a href="zvuk15.html">Задание 4</a></li>
+        </ul>
+    
+    
+    
+    
+    
+    </div>
+    <div> <h1>Задание 7 ЕГЭ</h1> 
+        <h3>Задача 1</h3>
+        <p>Для хранения произвольного растрового изображения размером 640 на 480 пикселей отведено 600 Кбайт памяти без учёта размера заголовка файла. При кодировании каждого пикселя используется 64 уровня прозрачности, а также одинаковое количество бит для указания его цвета. Коды пикселей записываются в файл один за другим без промежутков. Какое максимальное количество цветов (без учета степени прозрачности) можно использовать в изображении?*
+            *Взято с сайта Константина Полякова</p>
+            <p>
+                Решение:
+600*1024*8 бит = 640пикс * 480 пикс * i, <br>
+i = i1 + i2 <br>
+где i1 - глубина кодирования не считая прозрачности, а i2 - глубина кодирования прозрачности.
+уровень прозрачности = 64 => i2 = 6, т.к. 2^6 = 64
+следовательно: <br>
+(600*1024*8)бит/(640*480)пикс*** = i1 + 6, <br>
+*** = 16 глубина кодирования с учетом прозрачности. <br>
+16 - 6 = 10 глубина кодирования без учета прозрачности. <br>2^10 = 1024 цветов без учета прозрачности  вот и ответ
+
+
+            </p>
+            <p>
+                <img src="pr9 7ege.png" alt="">
+            </p>
+            
+            <h3>Задача 2</h3>
+            <p>
+                При кодировании растрового изображения для каждого пикселя используется палитра из  2^24  цветов и 256 уровней прозрачности. Коды пикселей записываются в файл один за другим без промежутков. Какой минимальный объём памяти (в Кбайт) нужно зарезервировать, чтобы можно было сохранить любое растровое изображение размером 1024 на 768 пикселей?
+            </p>
+            <p>
+                <img src="pr9 7 1ege.png" alt="">
+            </p>
+        </div>
+    </div> 
+</body>
+</html>
